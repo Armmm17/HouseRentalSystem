@@ -32,15 +32,15 @@ public class Main extends Application {
 
         //Instazio Scene figlie
         Owner ow = new Owner(this);
-        Admin ad = new Admin(this, 20);
-        Customer cu = new Customer(this, 20);
+        Admin ad = new Admin(this);
+        Customer cu = new Customer(this);
 
 
 
         // Instanzio Scene utilizaabili
         this.main = new Scene(root, V.WIDTH, V.HEIGHT);
         this.owner = new Scene(ow, V.WIDTH, V.HEIGHT);
-        this.admin = new Scene(ad, V.WIDTH, V.HEIGHT);
+        this.admin = new Scene(ad, V.WIDTH, V.HEIGHT+300);
         this.customers = new Scene(cu, V.WIDTH, V.HEIGHT);
 
 

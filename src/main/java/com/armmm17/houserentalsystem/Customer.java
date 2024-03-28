@@ -15,10 +15,11 @@ public class Customer extends VBox {
     private Main main;
     private Button back;
 
-    public Customer(Main main, double spacing) {
-        super(spacing);
+    public Customer(Main main) {
         this.main = main;
-        setBackground(new Background(new BackgroundFill(Paint.valueOf("green"), CornerRadii.EMPTY, Insets.EMPTY)));
+
+
+        setBackground(new Background(new BackgroundFill(Paint.valueOf("#e3e3e3"), CornerRadii.EMPTY, Insets.EMPTY)));
         setAlignment(Pos.CENTER);
         this.back = new Button("Go to Main Scene");
 

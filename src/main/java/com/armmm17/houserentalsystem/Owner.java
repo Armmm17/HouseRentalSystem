@@ -120,6 +120,7 @@ public class Owner extends VBox {
         this.centerFooter.setAlignment(Pos.BOTTOM_CENTER);
 
         // Write on database.csv the information
+            // Aggiungere pulizia file alla fine di ogni send
         this.publish = new Button("Send");
         this.publish.setOnAction(new EventHandler<ActionEvent>() {
             public static final String delimiter = ",";
