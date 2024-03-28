@@ -7,6 +7,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
@@ -86,6 +87,7 @@ public class Main extends Application {
 
         stage.setResizable(false);
         stage.setTitle("House Rental System");
+        stage.getIcons().add(new Image(V.houseImg));
         stage.setScene(main);
         stage.show();
     }
