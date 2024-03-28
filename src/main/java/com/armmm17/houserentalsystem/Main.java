@@ -47,10 +47,13 @@ public class Main extends Application {
         //SCENA MAIN
         root.setBackground(new Background(new BackgroundFill(Paint.valueOf("grey"), CornerRadii.EMPTY, Insets.EMPTY)));
         root.setAlignment(Pos.CENTER);
+
+        //Cambia scena / Naviga
         Button goToOwner = new Button("Go to Owner");
         goToOwner.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                stage.setTitle("Insert House - HouseRentalSystem");
                 stage.setScene(owner);
             }
         });
@@ -59,6 +62,7 @@ public class Main extends Application {
         goToAdmin.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                stage.setTitle("Admin Panel - HouseRentalSystem");
                 stage.setScene(admin);
             }
         });
@@ -67,6 +71,7 @@ public class Main extends Application {
         goToCustomers.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                stage.setTitle("Find House - HouseRentalSystem");
                 stage.setScene(customers);
             }
         });

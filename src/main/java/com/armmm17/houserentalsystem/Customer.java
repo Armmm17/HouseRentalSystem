@@ -25,6 +25,7 @@ public class Customer extends VBox {
         this.back.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent actionEvent) {
+                main.getStage().setTitle("House Rental System");
                 main.getStage().setScene(main.getMain());
             }
         });
