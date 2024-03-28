@@ -26,11 +26,11 @@ public class Main extends Application {
         this.stage = stage;
 
         //SCENA MAIN
-        VBox root = new VBox(25);
+        VBox root = new VBox(20);
 
 
         //Instazio Scene figlie
-        Owner ow = new Owner(this,20);
+        Owner ow = new Owner(this);
         Admin ad = new Admin(this, 20);
         Customer cu = new Customer(this, 20);
 
