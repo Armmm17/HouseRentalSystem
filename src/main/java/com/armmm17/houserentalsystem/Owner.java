@@ -24,7 +24,6 @@ import java.util.ArrayList;
 public class Owner extends VBox {
     private Main main;
 
-
     private HBox hBox;
 
     private GridPane grid;
@@ -119,7 +118,7 @@ public class Owner extends VBox {
         this.centerFooter.setSpacing(10);
         this.centerFooter.setAlignment(Pos.BOTTOM_CENTER);
 
-        // Write on database.csv the information
+        // Scrivi su database.csv  info
             // Aggiungere pulizia file alla fine di ogni send
         this.publish = new Button("Send");
         this.publish.setOnAction(new EventHandler<ActionEvent>() {
@@ -128,7 +127,7 @@ public class Owner extends VBox {
             public void handle(ActionEvent actionEvent) {
 
                 String tutto = "";
-                // Reading the database file and temporany saving in local var for append text later
+                // leggi database file and tempsalva in var locale per append text dopo
 
                 try {
                     BufferedReader reader = new BufferedReader(new FileReader(V.db));
@@ -147,7 +146,7 @@ public class Owner extends VBox {
                     e.printStackTrace();
                 }
 
-                // Convert the TextFields to String and format it in CSV
+                // Converti i TextFields in String e formatta in CSV
                 String append = "";
                 append += tfName.getText() + ", " + tfStreet.getText() + ", " + tfCity.getText() + ", " + tfCap.getText() + ", " + tfOwner.getText() + ", " + tfPrice.getText() + ", " + tfNRoom.getText() + ", " + tfNRoom.getText();
                 tutto += append;
